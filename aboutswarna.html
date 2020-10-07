@@ -1,0 +1,103 @@
+<html>
+<head>
+    <style>
+        body{
+           background-color: #00ff00; 
+        }
+        .title{
+            text-align: center;
+            font-size: 50px;
+            coloR:white;
+            margin-bottom: 40px;
+            margin-top: 40px;
+            text-decoration: underline;
+            text-decoration-color: #0000ff;
+             text-shadow: 2px 2px white;
+        }
+    
+               .left {
+            background-color: rgba(0, 0, 153,0.8);
+            float: left;
+            width: 500px;
+            height: 500px;
+            padding-left:50px;   
+            margin-left: 40px;
+            box-shadow: 5px 10px blur white;
+            color: white;
+            font-family: Garamond;
+            margin-bottom: 100px;
+            box-shadow: 10px 10px 20px 10px white;
+                   
+            
+        }
+        .right{
+            background-color: rgba(0, 0, 153,0.8);
+            float: right;
+            width: 550px;
+            height: 500px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-right: 40px;
+            color: white;
+            font-family:Garamond;
+            font-size: 20px;
+            margin-bottom: 100px;
+            box-shadow: 10px 10px 20px 10px white;
+        }
+        #table tr td{
+            color: white;
+        }
+        .color{
+            background-color: #ff0066;
+        }
+        .btn{
+           padding: 7px 30px;
+        margin-left: 15px;
+        margin-top: 40px;    
+        outline: none;
+        border: 1px solid white;
+        border-radius: 20px;
+        cursor: pointer;
+        color:white;
+        background: transparent; 
+        }
+    </style>
+    </head>
+    <body>
+        <div><button class="btn" style="color:#ff0066 "onclick="myfun()">Toggle pink mode</button>
+        </div>
+    <div class="title">About Myself</div>
+        
+        <div> 
+            <div class="left">
+                <button type="button" style="margin-left: 50px;margin-bottom: 10px;" class="btn" onclick="pro()">PROFILE</button>
+                <table id="table" style="display: none;" cellpadding="6">
+                    <tr><td>Name</td><td>:</td><td>Swarna V Joby</td></tr>
+                <tr><td>Age</td><td>:</td><td>22</td></tr>
+                <tr><td>Date of Birth</td><td>:</td><td>12/04/1998</td></tr>
+                <tr><td>Mobile No.</td><td>:</td><td>9207340547</td></tr>
+                <tr><td>E-mail</td><td>:</td><td>swarnavjoby123@gmail.com</td></tr>
+                    <tr><td>Address</td><td>:</td><td>Vengackal House</td></tr>
+                    <tr><td></td><td></td><td>Vellarikundu</td></tr>
+                    <tr><td></td><td></td><td>Kasaragod</td></tr>
+            </table></div>
+            <div class="right">
+                <h3 >About Me</h3>
+        <p>Myself Swarna V Joby.I born and raised in Kasaragod and currently I am persuing MCA from Sree Narayana gurukulam College of Engineering.I have done my schoolings from St.Mary's EMHS and Varakkad HSS,under graduate degree from Navajyothi College.Talking about my family,my family consists of five members including Mother,brother,uncle ,granpa and me.
+         My hobbies include hearing music ,drawing,painting etc.
+Coming to my strengths and weaknesses, my strengths are I am a good learner, innovative, I have positive attitude and committed to my work. My weakness is hot tempered .
+My ultimate goal is to do work what I like to do and your company can provide me that opportunity.
+                </p></div></div>
+    <script>
+        function myfun()
+        {
+            var element=document.body;
+            element.classList.toggle("color");
+        }
+        function pro(){    
+        document.getElementById("table").style.display="block"; 
+}
+        
+        </script>
+    </body>
+</html>
