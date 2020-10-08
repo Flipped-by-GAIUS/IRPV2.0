@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body{
+            background-color: #00ff00;
+        }
+        .col-lg-6{
+            color: white;
+        }
+     .color{
+            background-color: #ff66a3;
+         background-image:url("data:image/jpeg;base64,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");
+        }
+        
+    </style>
+    </head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+  <a class="navbar-brand" href="#">SWARNA V JOBY</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item"><button type="button" class="btn btn-info" onclick="f()">Change BG</button>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+    <br>
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-lg-6 " style="background-color: #0039e6">
+
+         <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo" onclick="alt()">PROFILE</button>
+  <div id="demo" class="collapse">
+     <table>
+                    <tr><td>Name</td><td>:</td><td>Swarna V Joby</td></tr>
+                <tr><td>Age</td><td>:</td><td>22</td></tr>
+                <tr><td>Date of Birth</td><td>:</td><td>12/04/1998</td></tr>
+                <tr><td>Mobile No.</td><td>:</td><td>9207340547</td></tr>
+                <tr><td>E-mail</td><td>:</td><td>swarnavjoby123@gmail.com</td></tr>
+                    <tr><td>Address</td><td>:</td><td>Vengackal House</td></tr>
+                    <tr><td></td><td></td><td>Vellarikundu</td></tr>
+                    <tr><td></td><td></td><td>Kasaragod</td></tr>
+            </table>
+  </div>
+          </div>
+      <div class="col-lg-6 " style="background-color:  #33ccff">
+       <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1" onclick="alt()">ABOUT ME</button>
+  <div id="demo1" class="collapse">
+     <p>Myself Swarna V Joby.I born and raised in Kasaragod and currently I am persuing MCA from Sree Narayana gurukulam College of Engineering.I have done my schoolings from St.Mary's EMHS and Varakkad HSS,under graduate degree from Navajyothi College.Talking about my family,my family consists of five members including Mother,brother,uncle ,granpa and me.
+         My hobbies include hearing music ,drawing,painting etc.
+Coming to my strengths and weaknesses, my strengths are I am a good learner, innovative, I have positive attitude and committed to my work. My weakness is hot tempered .
+My ultimate goal is to do work what I like to do and your company can provide me that opportunity.
+                </p>
+  </div>
+    </div>
+      </div>
+        <div id="ale" class="alert alert-info" style="display: none;background-color: white">
+    I just like to be my selfie!
+  </div>
+    </div>
+    
+    
+    
+    
+<script>
+    function f(){
+         var element=document.body;
+            element.classList.toggle("color");
+    }
+   function alt(){
+       document.getElementById('ale').style.display="block";
+   }
+    </script>
+</body>
+</html>
