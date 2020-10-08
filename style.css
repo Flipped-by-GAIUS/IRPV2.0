@@ -1,0 +1,22 @@
+
+
+body {
+	background-color:#bebebe;
+	}
+
+h1 {
+	font-family:verdana;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+h2 {
+	font-family:verdana;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #acd1b2;
+}
